@@ -1,0 +1,10 @@
+{:paths ["src" "resources"]
+ ;; Zero third-party runtime deps — every namespace is portable .cljc (JVM, CLJS, SCI).
+ ;; Zone I/O is a hand-rolled minimal reader/emitter over the well-formed RFC-1035 subset.
+ :deps {}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
+         :main-opts ["-m" "cognitect.test-runner"]
+         :exec-fn cognitect.test-runner.api/test}}}

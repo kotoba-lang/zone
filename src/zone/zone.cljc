@@ -11,7 +11,7 @@
 
   `emit-str` produces canonical zone text — records sorted by name then type.
   The pair round-trips: (= (emit-str z) (emit-str (parse-str (emit-str z))))."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── portable integer coercion ────────────────────────────────────────────────
 

@@ -4,7 +4,7 @@
   caller decides how to surface them.  `valid?` is true iff there are no :error-level
   problems (warnings are advisory)."
   (:require [zone.model :as m]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn- problem [severity code id msg]
   {:zone/severity severity :zone/code code :zone/id id :zone/msg msg})

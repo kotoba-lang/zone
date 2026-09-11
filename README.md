@@ -121,5 +121,5 @@ the godaddy-dns-clj API sync model where a PATCH is cheaper than DELETE+CREATE.
 ## Test
 
 ```
-clojure -X:test
+kbb -X:test
 ```

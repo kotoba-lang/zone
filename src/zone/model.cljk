@@ -23,7 +23,7 @@
                :zone/retry :zone/expire :zone/minimum}
     SRV       {:zone/pri :zone/weight :zone/port :zone/target}
     CAA       {:zone/flags :zone/tag :zone/value}"
-  (:require [clojure.set :as set]))
+  (:require [kotoba.lang.coll :as set]))
 
 ;; --- queries ---
 

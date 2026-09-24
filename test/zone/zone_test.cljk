@@ -1,5 +1,5 @@
 (ns zone.zone-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [clojure.java.io :as io]
             [zone.model    :as m]
             [zone.validate :as v]

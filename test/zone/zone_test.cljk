@@ -1,6 +1,6 @@
 (ns zone.zone-test
   (:require [kotoba.test :refer [deftest is testing]]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [zone.model    :as m]
             [zone.validate :as v]
             [zone.zone     :as z]))
